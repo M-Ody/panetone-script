@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PanetoneScript.Utils
+namespace ScritsLoader.Utils
 {
     public class Debug
     {

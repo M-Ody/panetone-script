@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PanetoneScript
+namespace ScritsLoader
 {
     class Program
     {
@@ -17,7 +17,7 @@ namespace PanetoneScript
 
             Console.WriteLine(directory + filename);
 
-            PanetoneScript.LoadFolder(directory);
+            ScriptsLoader.LoadFolder(directory);
 
             Console.ReadLine();
         }

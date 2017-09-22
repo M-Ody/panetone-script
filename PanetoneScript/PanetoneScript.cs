@@ -1,11 +1,10 @@
-﻿using PanetoneScript.Utils;
-using System.IO;
-using System;
+﻿using ScritsLoader.Utils;
 using System.Collections.Generic;
+using System.IO;
 
-namespace PanetoneScript
+namespace ScritsLoader
 {
-    public static class PanetoneScript
+    public static class ScriptsLoader
     {
         private static string filesDir;
         private static List<string> panetoneFilesNames = new List<string>();
