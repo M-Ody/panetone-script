@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PanetoneScript
 {
@@ -15,7 +16,7 @@ namespace PanetoneScript
 
             ScriptsLoader.ScriptsLoader.LoadFolderFiles(directory);
 
-            ScriptsLoader.ScriptsReader.ReadAll(directory,ScriptsLoader.ScriptsLoader.GetAllFilesNames());
+            List<ScriptFile> scriptFiles = ScriptsLoader.ScriptsReader.ReadAll(directory,ScriptsLoader.ScriptsLoader.GetAllFilesNames());
 
             Console.ReadLine();
         }
