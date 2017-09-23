@@ -1,8 +1,8 @@
-﻿using ScritsLoader.Utils;
+﻿using ScriptsLoader.Utils;
 using System.Collections.Generic;
 using System.IO;
 
-namespace ScritsLoader
+namespace ScriptsLoader
 {
     public static class ScriptsLoader
     {
