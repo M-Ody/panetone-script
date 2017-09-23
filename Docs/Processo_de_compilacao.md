@@ -1,5 +1,5 @@
 # Fases da compilação do PanetoneScript
-A compilação do PanetoneScript é dividida em 4 etapas, todas elas com uma certa independência e funções específicas em relação às outras, de modo que uma parte pode ser alterada sem quebrar o restante.
+A compilação do PanetoneScript é dividida em 7 etapas, todas elas com uma certa independência e funções específicas em relação às outras, de modo que uma parte pode ser alterada sem quebrar o restante.
 São elas:
 
 ### 1. Carregamento e leitura
