@@ -1,23 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ScriptsLoader
+namespace PanetoneScript
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string directory = @"C:\Users\mathias.ody\Documents\Mathias Ody\Ps";
+            string directory = @"C:\Users\0176416\Documents\Ps";
             string filename;
 
             filename = Console.ReadLine();
 
             Console.WriteLine(directory + filename);
 
-            ScriptsLoader.LoadFolder(directory);
+            ScriptsLoader.ScriptsLoader.LoadFolderFiles(directory);
+
+            ScriptsLoader.ScriptsReader.ReadAll(directory,ScriptsLoader.ScriptsLoader.GetAllFilesNames());
 
             Console.ReadLine();
         }
