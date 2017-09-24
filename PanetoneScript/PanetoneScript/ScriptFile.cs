@@ -2,11 +2,13 @@
 {
     public class ScriptFile
     {
-        public string [] CodeLines { get; private set; }
+        public ScriptLine[] CodeLines { get; set; }
+        public string Filename { get; private set; }
 
-        public ScriptFile(string [] codeLines)
+        public ScriptFile(ScriptLine[] codeLines, string filename)
         {
             CodeLines = codeLines;
+            Filename = filename;
         }
     }
 }

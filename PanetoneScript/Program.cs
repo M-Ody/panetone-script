@@ -16,7 +16,9 @@ namespace PanetoneScript
 
             ScriptsLoader.ScriptsLoader.LoadFolderFiles(directory);
 
-            List<ScriptFile> scriptFiles = ScriptsLoader.ScriptsReader.ReadAll(directory,ScriptsLoader.ScriptsLoader.GetAllFilesNames());
+            List<CrudeScriptFile> scriptFiles = ScriptsLoader.ScriptsReader.ReadAll(directory,ScriptsLoader.ScriptsLoader.GetAllFilesNames());
+
+
 
             Console.ReadLine();
         }
