@@ -1,4 +1,5 @@
 ﻿using System;
+using PanetoneScript.PSLog;
 
 namespace PanetoneScript.PreProcessor
 {
@@ -6,6 +7,8 @@ namespace PanetoneScript.PreProcessor
     {
         public void Execute()
         {
+			LogList logList = new LogList ();
+			Log log = new Log (logList);
             try
             {
                 //executar
@@ -16,7 +19,7 @@ namespace PanetoneScript.PreProcessor
             }
             finally
             {
-                //printar warnings e erros não fatais
+				log.PrintLog ();
             }
         }
     }

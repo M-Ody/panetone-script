@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -46,11 +46,11 @@
     <Compile Include="2. PreProcessor\Modules\InitialPreprocessorCheck.cs" />
     <Compile Include="2. PreProcessor\PreProcessor.cs" />
     <Compile Include="1. ScriptsLoader\ScriptsLoader.cs" />
-    <Compile Include="Log\Logable.cs" />
-    <Compile Include="Log\Log.cs" />
-    <Compile Include="Log\Logable\Error.cs" />
-    <Compile Include="Log\Logable\Warning.cs" />
-    <Compile Include="Log\LogList.cs" />
+    <Compile Include="PSLog\Logable.cs" />
+    <Compile Include="PSLog\Log.cs" />
+    <Compile Include="PSLog\Logable\Error.cs" />
+    <Compile Include="PSLog\Logable\Warning.cs" />
+    <Compile Include="PSLog\LogList.cs" />
     <Compile Include="PanetoneScript\ICompilationStep.cs" />
     <Compile Include="PanetoneScript\ScriptFile.cs" />
     <Compile Include="PanetoneScript\ScriptLine.cs" />
@@ -58,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="1. ScriptsLoader\ScriptsReader.cs" />
     <Compile Include="Utils\Debug.cs" />
+    <Compile Include="2. PreProcessor\Modules\CheckForPreProcessorDirectives.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

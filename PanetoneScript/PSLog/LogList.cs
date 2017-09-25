@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PanetoneScript.Log
+namespace PanetoneScript.PSLog
 {
     public class LogList : List<Logable>
     { }

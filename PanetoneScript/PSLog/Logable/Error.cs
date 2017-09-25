@@ -1,4 +1,4 @@
-﻿namespace PanetoneScript.Log
+﻿namespace PanetoneScript.PSLog
 {
     public class Error : Logable
     {

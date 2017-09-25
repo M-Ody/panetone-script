@@ -1,0 +1,41 @@
+Checar por chamadas de preprocessamento e se certificar de que estão uma em cada linha
+Executar as chamadas de preprocessamento
+Localizar strings e substituir por ##str001, ##str002 e mantê-las num array de strings. Strings de multiplas linhas serão reunidas em um ScriptLine só
+Excluir linhas em branco, novas linhas e espaços duplos
+
+Reunir ScriptLines em blocos de código C#
+Substituir palavras reservadas do PS pelas do C#
+
+Linkar scripts aos objetos do jogo (a princípio essa parte seria feita só fazendo o código que busca os script, mas se os arquivos .unity tiverem dados sobre os gameObjects, esse arquivo pode ser analizado no lugar disso, mas o código é gerado igual)
+Linkar os eventos entre si
+
+
+
+
+Flag debug mode global e flag only in editor com chamada pre processador
+
+
+
+
+Como pode ser feito a geração do código C# ainda mantendo as linhas:
+
+
+
+ExecuteOnStart("Tal código");
+ExecuteOnUpdate("Tal código");
+ExecuteOnStart("Tal código");
+ExecuteOnCollision("Tal código");
+
+E depois juntar no script propriamente dito
+Isso pode ser só no modo debug, o modo release será apenas otimizado, sem ligar para número de linhas e debugagem
+
+
+
+
+
+
+
+TODO:
+- Passar o sistema de erros para constantes
+- Melhorar verificação de sintaxe em todas as etapas da compilação (atualmente são só feitas checagens básicas
+- Verificações pré compilação relacionadas aos módulos customizados, certificando-se de que não há dois iguais, por exemplo. Pode ser feito exigindo que se use C# Attributes

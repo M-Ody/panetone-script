@@ -7,14 +7,12 @@ namespace ScriptsLoader
 {
     public static class ScriptsLoader
     {
-        private static string filesDir;
         private static List<string> panetoneFilesNames = new List<string>();
 
         public static void LoadFolderFiles (string directory)
         {
             if (Directory.Exists(directory))
             {
-                filesDir = directory;
                 CheckPanetoneFilesOnFolder(directory);
                 //CheckForUnchangedFiles();
             }
