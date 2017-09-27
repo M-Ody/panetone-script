@@ -3,7 +3,7 @@ using PanetoneScript.PSLog;
 
 namespace PanetoneScript.PreProcessor.Modules
 {
-    public class InitialPreprocessorCheck : IPreprocessModule
+    public class InitialPreprocessorCheck
     {
 		public void Process(ref ScriptFile scriptFile, ref LogList log)
         {
@@ -22,12 +22,12 @@ namespace PanetoneScript.PreProcessor.Modules
 			{
 				if (line.LineCode.Contains ("#")) 
 				{
-					CheckOnlyOnePreProcessorDirective (ref line);
+					CheckOnlyOnePreProcessorDirective (line);
 				}
 			}
 		}
 
-		private void CheckOnlyOnePreProcessorDirective (ref ScriptLine line) 
+		private void CheckOnlyOnePreProcessorDirective (ScriptLine line) 
 		{
 			// Checar se existe mais de uma diretiva na linha
 			if (line.LineCode.IndexOf("#") != line.LineCode.LastIndexOf("#"))

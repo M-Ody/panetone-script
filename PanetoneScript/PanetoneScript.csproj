@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2. PreProcessor\IPreprocessModule.cs" />
     <Compile Include="2. PreProcessor\Modules\InitialPreprocessorCheck.cs" />
     <Compile Include="2. PreProcessor\PreProcessor.cs" />
     <Compile Include="1. ScriptsLoader\ScriptsLoader.cs" />
@@ -59,9 +58,13 @@
     <Compile Include="1. ScriptsLoader\ScriptsReader.cs" />
     <Compile Include="Utils\Debug.cs" />
     <Compile Include="2. PreProcessor\Modules\CheckForPreProcessorDirectives.cs" />
+    <Compile Include="2. PreProcessor\PreProcessorObjects\PreProcessorDirective.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="2. PreProcessor\PreProcessorObjects\" />
+  </ItemGroup>
 </Project>
