@@ -42,15 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2. PreProcessor\Modules\InitialPreprocessorCheck.cs" />
+    <Compile Include="2. PreProcessor\Modules\ExecuteBlockDirectives.cs" />
+    <Compile Include="2. PreProcessor\Modules\BlockDirectives\ConditionalDirective.cs" />
     <Compile Include="2. PreProcessor\PreProcessor.cs" />
     <Compile Include="1. ScriptsLoader\ScriptsLoader.cs" />
+    <Compile Include="2. PreProcessor\RemoveStrings.cs" />
+    <Compile Include="PanetoneScript\Count.cs" />
+    <Compile Include="PanetoneScript\StringsRepository.cs" />
     <Compile Include="PSLog\Logable.cs" />
     <Compile Include="PSLog\Log.cs" />
     <Compile Include="PSLog\Logable\Error.cs" />
+    <Compile Include="PSLog\Logable\Message.cs" />
     <Compile Include="PSLog\Logable\Warning.cs" />
     <Compile Include="PSLog\LogList.cs" />
-    <Compile Include="PanetoneScript\ICompilationStep.cs" />
     <Compile Include="PanetoneScript\ScriptFile.cs" />
     <Compile Include="PanetoneScript\ScriptLine.cs" />
     <Compile Include="Program.cs" />
@@ -62,9 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <Folder Include="2. PreProcessor\PreProcessorObjects\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>

@@ -2,16 +2,17 @@
 
 namespace PanetoneScript.PSLog
 {
-    public class Error : Logable
+    public class Message : Logable
     {
-        public Error(string message)
+        public Message(string message)
         {
             Message = message;
         }
 
         public override void Print()
         {
-            Debug.LogError(Message);
+            Debug.Log(Message);
         }
     }
 }
+

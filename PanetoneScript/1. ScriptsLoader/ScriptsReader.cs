@@ -6,7 +6,7 @@ namespace ScriptsLoader
 {
     public static class ScriptsReader
     {
-        public static List<ScriptFile> ReadAll (string directory, List<string> filesNames)
+        public static ScriptFile[] ReadAll(string directory, List<string> filesNames)
         {
             var scriptsFiles = new List<ScriptFile>();
             foreach (string filename in filesNames)
@@ -22,7 +22,7 @@ namespace ScriptsLoader
                 var scriptFile = new ScriptFile(scriptLines, filename);
                 scriptsFiles.Add(scriptFile);
             }
-            return scriptsFiles;
+            return scriptsFiles.ToArray();
         }
     }
 }

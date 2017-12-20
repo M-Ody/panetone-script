@@ -1,12 +1,14 @@
-﻿namespace PanetoneScript.PSLog
+﻿using ScriptsLoader.Utils;
+
+namespace PanetoneScript.PSLog
 {
     public class Logable
     {
         protected string Message;
 
-        public string Print()
+        public virtual void Print()
         {
-            return Message;
+            Debug.Log(Message);
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using PanetoneScript.PanetoneScript;
 using ScriptsLoader;
+using System;
 
 namespace PanetoneScript
 {
@@ -8,7 +8,7 @@ namespace PanetoneScript
     {
         static void Main(string[] args)
         {
-            string directory = @"C:\Users\0176416\Documents\Ps";
+            string directory = @"C:\Users\mathias.ody\Documents\Mathias Ody\Ps\testeComp";
             string filename;
 
             filename = Console.ReadLine();
@@ -17,8 +17,12 @@ namespace PanetoneScript
 
             ScriptsLoader.ScriptsLoader.LoadFolderFiles(directory);
 
-            List<ScriptFile> scriptFiles = ScriptsReader.ReadAll(directory,ScriptsLoader.ScriptsLoader.GetAllFilesNames());
+            ScriptFile[] scriptFiles = ScriptsReader.ReadAll(directory, ScriptsLoader.ScriptsLoader.GetAllFilesNames());
 
+            var preProcessor = new PreProcessor.PreProcessor();
+            StringsRepository stringsRepo = new StringsRepository();
+
+            preProcessor.Execute(ref scriptFiles, ref stringsRepo);
 
 
             Console.ReadLine();
